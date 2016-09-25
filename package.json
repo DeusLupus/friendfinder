@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "just another dating app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeusLupus/friendfinder.git"
+  },
+  "author": "Deo Bissessar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeusLupus/friendfinder/issues"
+  },
+  "homepage": "https://github.com/DeusLupus/friendfinder#readme"
+}
