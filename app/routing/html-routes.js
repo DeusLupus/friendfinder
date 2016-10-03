@@ -1,11 +1,10 @@
 //dependencies
-var express = require('express');
+var path = require('path');
 
-//route to survey
-app.get('/survey', function(req, res){
-	res.sendFile(path.join(__dirname, 'survey.html'));
-});
-
-app.use('/', function (req, res){
-
-})
+//routes
+module.exports = function(app){
+	app.get('/', function(req, res){
+		var homepage = '/../public/home.html';
+		res.sendFile(path.join(__dirname + homepage));
+	});
+};
