@@ -15,6 +15,13 @@ app.use(bodyparser.json({type:'application/vnd.api+json'}));
 require('./app/routing/html-routes.js')(app);
 require('./app/routing/api-routes.js')(app);
 
+//can't get this to work in html-routes or here..
+/*
+app.get('/survey', function (req, res) {
+	res.sendFile(path.join(__dirname, '/../public/survey.html'));
+});
+*/
+
 //start application
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, function(){
